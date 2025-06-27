@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythonプロジェクトビルダー ダウンロード</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pythonプロジェクトビルダー</h1>
+        <p>数回の対話で、定型的なPythonプロジェクトを簡単に作成できるツールです。</p>
+    </header>
+
+    <main>
+        <section class="download-section">
+            <h2>ダウンロード</h2>
+            <p>最新バージョン (v1.0) - Windows用</p>
+            <a href="ProjectBuilder.exe" class="download-btn" download>今すぐダウンロード (.exe)</a>
+        </section>
+
+        <section>
+            <h2>特徴</h2>
+            <ul>
+                <li>GUIでプロジェクト作成場所を直感的に選択</li>
+                <li>プロジェクト名、作成者、説明を対話形式で設定</li>
+                <li>exeファイル自身が右クリックメニューへの登録・解除機能を持つ</li>
+                <li>定型的なプロジェクト構造を瞬時に生成し、開発をすぐに開始可能</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>使い方</h2>
+            <ol>
+                <li>
+                    <strong>ダウンロードと配置</strong><br>
+                    上のボタンから<code>ProjectBuilder.exe</code>をダウンロードし、<code>C:\Tools</code>など、管理しやすい場所にファイルを移動させます。
+                </li>
+                <li>
+                    <strong>右クリックメニューへ登録 (初回のみ)</strong><br>
+                    コマンドプロンプトを<strong>管理者として実行</strong>し、以下のコマンドでexeを右クリックメニューに登録します。<br>
+                    <pre><code>cd C:\Tools
+C:\Tools> ProjectBuilder.exe --install</code></pre>
+                </li>
+                <li>
+                    <strong>プロジェクト作成</strong><br>
+                    プロジェクトを作成したいフォルダを開き、何もないところで右クリック →「新しいPythonプロジェクトをここで作成」を選択します。
+                </li>
+                <li>
+                    <strong>登録解除</strong><br>
+                    不要になった場合は、管理者として実行したコマンドプロンプトで以下のコマンドを実行します。<br>
+                    <pre><code>C:\Tools> ProjectBuilder.exe --uninstall</code></pre>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>スクリーンショット</h2>
+            <img src="screenshot.png" alt="アプリケーションの実行画面" class="screenshot">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 <あなたの名前 または GitHubユーザー名>. ソースコードは<a href="https://github.com/<あなたのGitHubユーザー名>/<リポジトリ名>" target="_blank">GitHub</a>で公開しています。</p>
+    </footer>
+</body>
+</html>
